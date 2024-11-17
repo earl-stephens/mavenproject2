@@ -4,6 +4,9 @@
 
 package com.mycompany.mavenproject2;
 
+import config.ProjectConfig;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 /**
  *
  * @author earltstephens
@@ -11,6 +14,7 @@ package com.mycompany.mavenproject2;
 public class Mavenproject2 {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        
+        var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
     }
 }

@@ -4,10 +4,21 @@
  */
 package com.mycompany.mavenproject2;
 
+import org.springframework.stereotype.Component;
+
 /**
  *
  * @author earltstephens
  */
+@Component
 public class Parrot {
+    private String name;
     
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String getName() {
+        return name;
+    }
 }

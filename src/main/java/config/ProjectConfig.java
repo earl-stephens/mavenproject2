@@ -4,10 +4,15 @@
  */
 package config;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
 /**
  *
  * @author earltstephens
  */
+@Configuration
+@ComponentScan(basePackages = "com.mycompany.mavenproject2")
 public class ProjectConfig {
     
 }
