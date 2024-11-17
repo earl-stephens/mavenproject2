@@ -29,6 +29,6 @@ public class ParrotTest {
     public void testItsNameIsKoko() {
         Parrot p = context.getBean(Parrot.class);
         
-        assertEquals(null, p.getName());
+        assertEquals("Koko", p.getName());
     }
 }
